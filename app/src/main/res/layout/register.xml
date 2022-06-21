@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="#f7a67e"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_height="490dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/cv"
+        android:background="@drawable/bg_form_rounded">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#FFF77732"
+                android:textSize="25sp"
+                android:text="Register"/>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:weightSum="100">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tvFirstName"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#FFF77732"
+                    android:text="First Name"
+                    android:layout_weight="32"
+                    android:textSize="18sp" />
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:id="@+id/firstname_input"
+                    android:layout_weight="70"
+                    android:singleLine="true"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:weightSum="100">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tvMiddleName"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#FFF77732"
+                    android:text="Middle Name"
+                    android:layout_weight="32"
+                    android:textSize="18sp" />
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:id="@+id/middlename_input"
+                    android:layout_weight="70"
+                    android:singleLine="true"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:weightSum="100">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tvLastName"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#FFF77732"
+                    android:text="Last Name"
+                    android:layout_weight="32"
+                    android:textSize="18sp" />
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:id="@+id/lastname_input"
+                    android:layout_weight="70"
+                    android:singleLine="true"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:weightSum="100">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tvEmail"
+                    android:gravity="center" android:textStyle="bold"
+                    android:textColor="#FFF77732" android:text="EmailID"
+                    android:layout_weight="28"
+                    android:textSize="18sp" />
+                <EditText android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:id="@+id/email_input" android:layout_weight="72"
+                    android:singleLine="true" android:layout_gravity="center_horizontal|top"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:weightSum="100">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tvAddress"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#FFF77732"
+                    android:text="Address"
+                    android:layout_weight="30"
+                    android:textSize="18sp" />
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:id="@+id/address_input"
+                    android:layout_weight="70"
+                    android:singleLine="true"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:weightSum="100">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tvCity"
+                    android:gravity="center" android:textStyle="bold"
+                    android:textColor="#FFF77732" android:text="City"
+                    android:layout_weight="28"
+                    android:textSize="18sp" />
+                <EditText android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:id="@+id/city_input"
+                    android:layout_weight="72"
+                    android:singleLine="true"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:weightSum="100">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:id="@+id/tvPincode"
+                    android:gravity="center" android:textStyle="bold"
+                    android:textColor="#FFF77732" android:text="Post pin"
+                    android:layout_weight="28"
+                    android:textSize="18sp" />
+                <EditText android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:id="@+id/pincode_input" android:layout_weight="72"
+                    android:singleLine="true" android:layout_gravity="center_horizontal|top"
+                    android:layout_marginRight="15dp" android:inputType="phone"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:weightSum="100">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:id="@+id/tvPhoneNo"
+                    android:gravity="center" android:textStyle="bold"
+                    android:textColor="#FFF77732" android:text="Phone No"
+                    android:layout_weight="28"
+                    android:textSize="18sp" />
+                <EditText android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:id="@+id/phone_no_input" android:layout_weight="72"
+                    android:singleLine="true" android:layout_gravity="center_horizontal|top"
+                    android:layout_marginRight="15dp"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:weightSum="100">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tvPassword"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#FFF77732"
+                    android:text="Password"
+                    android:layout_weight="25"
+                    android:textSize="18sp" />
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/password_input"
+                    android:layout_weight="70"
+                    android:singleLine="true"
+                    android:layout_gravity="center_horizontal|top"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:inputType="textPassword"/>
+                <ToggleButton android:layout_height="wrap_content"
+                    android:layout_width="50dp"
+                    android:id="@+id/toggleButton2"
+                    android:text="New ToggleButton"
+                    android:layout_weight="5"
+                    android:singleLine="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/bg_button_rounded"
+                    android:textStyle="bold|normal" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center">
+                <Button android:layout_height="60dp"
+                    android:layout_width="150dp"
+                    android:id="@+id/register_button"
+                    android:textStyle="bold"
+                    android:textColor="#000000" android:text="Register"
+                    style="?android:textAppearanceSmall"
+
+                    android:textSize="20sp"
+                    android:background="@drawable/bg_button_rounded"
+                    android:layout_marginTop="15dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</ScrollView>
+
+</FrameLayout>
+
