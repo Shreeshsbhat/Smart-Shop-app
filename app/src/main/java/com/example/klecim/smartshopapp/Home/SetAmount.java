@@ -10,9 +10,7 @@ import android.widget.EditText;
 
 import com.example.klecim.smartshopapp.R;
 
-/**
- * Created by Arunkumar on 10/28/2016.
- */
+
 public class SetAmount extends AppCompatActivity {
 
     EditText edAmount;
